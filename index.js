@@ -11,6 +11,7 @@ function nowServing(katzDeliLine) {
   return 'There is nobody waiting to be served!'
 }
 
+<<<<<<< HEAD
 function currentLine(line) {
   var i = 0;
   var str = 'The line is currently: '
@@ -21,6 +22,18 @@ function currentLine(line) {
       } while (i < line.length - 1);
     str += line.length + '. ' + 
     line.slice(-1);
+=======
+function currentLine(katzDeliline) {
+  var i = 0;
+  var str = 'The line is currently: '
+  if (katzDeliLine.length > 0) {
+    do {
+      str += [i + 1] + '. ' + katzDeliLine[i] + ', ';
+      i++;
+      } while (i < katzDeliLine.length - 1);
+    str += katzDeliLine.length + '. ' + 
+    katzDeliLine.slice(-1);
+>>>>>>> c48a24b1cbc401fe7136563a25f5ea6e0bf4b9de
     return str
   }
   else
